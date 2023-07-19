@@ -17,4 +17,4 @@ I have used pretrained YOLOV4 with Darknet53 as a backbone architecture and fine
 
 I trained the model on google Colab and this is the [notebook](https://colab.research.google.com/drive/1l1JTl0IO2YK_zOda_K5Qyy54sEtDPl3W?usp=sharing). 
 
-and You can download the weights from this link [notebook](https://drive.google.com/file/d/1-HxhZHPRMDepiPdqHqa-waEDffMlCF5O/view?usp=drive_link)
+and You can download the weights from [here](https://drive.google.com/file/d/1-HxhZHPRMDepiPdqHqa-waEDffMlCF5O/view?usp=drive_link)
