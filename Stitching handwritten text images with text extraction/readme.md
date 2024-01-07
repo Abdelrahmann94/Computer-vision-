@@ -194,7 +194,7 @@ for result in results:
 # Display the image with bounding boxes and text
 plt.imshow( img)
 ```
-![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/OCR_res7.png)
+![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/8157047e893b2a23ae5a6465e87e9a89e2172ca9/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/OCR_res7.png)
 
 ### 3- KerasOCR 
 Used KerasOCR and it brought the best accuracy for this task but it needs GPU acceleration so, I used Google Colab.
@@ -215,7 +215,7 @@ plt.imshow(image)
 plt.axis('off')
 plt.show()
 ```
-![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/kk.png)
+![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/8157047e893b2a23ae5a6465e87e9a89e2172ca9/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/kk.png)
 
 ## Conclusion 
 I used SIFT Algorithm with the Homography matrix technique to apply seamless image stitching for handwritten text images. Then applied an OCR model using KerasOCR.
