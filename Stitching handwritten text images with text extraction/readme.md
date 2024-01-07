@@ -12,7 +12,7 @@ Image stitching is a computer vision and image processing technique that involve
 Multiple images are captured by a camera or other imaging device, often with some degree of overlap between consecutive images.
 Feature Extraction such as corners or distinctive points, are identified in each image. These features serve as reference points for aligning and merging the images.
 
-![mk]([https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme1.png](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme1.png))
+![mk]([https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme1.png](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme1.png)
 
 The images are then aligned based on the extracted features. This involves finding the transformation (translation, rotation, scaling) that minimizes the differences between corresponding features in different images.
 
