@@ -12,7 +12,7 @@ Image stitching is a computer vision and image processing technique that involve
 Multiple images are captured by a camera or other imaging device, often with some degree of overlap between consecutive images.
 Feature Extraction such as corners or distinctive points, are identified in each image. These features serve as reference points for aligning and merging the images.
 
-![mk](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme1.png)
+![mk]([https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme1.png](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme1.png))
 
 The images are then aligned based on the extracted features. This involves finding the transformation (translation, rotation, scaling) that minimizes the differences between corresponding features in different images.
 
@@ -22,12 +22,12 @@ Additional corrections may be applied to address distortions, vignetting, or oth
 
 The final result is a panoramic image that provides a wide-angle view, often covering a larger field of view than any single image in the original set.
 
-![mN](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme3.png)
+![mN](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme3.png)
 
 ### SIFT Algorithm
 The Scale-Invariant Feature Transform (SIFT) algorithm is a computer vision algorithm used for image feature detection, description, and matching.the detector can still distinguish the corners even if the image is rotated. However, the Harris Detector cannot perform well if the image is scaled differently.
 
-![SI](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme2.png)
+![SI](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme2.png)
 
 SIFT starts by building a scale-space representation of an image using Gaussian blurring at different scales. This helps in detecting features at different sizes.
 The Difference of Gaussians (DoG) is computed by taking the difference between consecutive blurred images in the scale-space pyramid. When the DoG is found, the SIFT detector searches the DoG over scale and space for local extremas, which can be potential key points. Local extrema in the DoG pyramid are identified as potential key locations.
@@ -80,20 +80,20 @@ Which means, instead of a list of matches you get a list of a list of matches.
 ### Homography Matrix
 Homography is a transformation that maps the points in one image to the corresponding point in another image. The homography is a 3×3 matrix :
 
-![HM](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme4.png)
+![HM](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme4.png)
 
 Consider two images of a plane (top of the book) shown in Figure 1. The red dot represents the same physical point in the two images. In computer vision jargon we call these corresponding points. Figure 1. shows four corresponding points in four different colors — red, green, yellow, and orange. A Homography is a transformation ( a 3×3 matrix ) that maps the points in one image to the corresponding points in the other image.
 
-![HH](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme5.png)
+![HH](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme5.png)
 
 Homography matrix simply represents the transformation of one point in an image plane to the same point in another image plane.
 
 
 To calculate the homography between two images, we must know at least four corresponding points between them. OpenCV robustly estimates a homography that fits all corresponding points in the best possible way. The point correspondences are found by matching features like SIFT or SURF between the images.
 
-![HK](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme6.png)
+![HK](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme6.png)
 
-![HL](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme7.png)
+![HL](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme7.png)
 
 ### RANSAC algorithm
 RANdom SAmple Consensus or RANSAC is an iterative algorithm to fit linear models. Different from other linear regressors, RANSAC is designed to be robust to outliers. Here, I will use RANSAC to estimate the Homography matrix. Note that Homography is very sensitive to the quality of data we pass to it, hence need an algorithm (RANSAC) that can filter irrelevant points from the data distribution.
@@ -120,7 +120,7 @@ Repeat N times :
 After the Homography Matrix calculation, need to warp one of the images to a common plane
 Finally, we can apply our transformation by calling the cv2.warpPerspective function. The first parameter is our original image that we want to warp, the second is our transformation matrix M (which will be obtained from homography_stitching), and the final parameter is a tuple, used to indicate the width and height of the output image.
 
-![IW](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/readme8.png)
+![IW](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/readme8.png)
 
 After calculating the transformation matrix (which in this case is the Homography_Matrix), apply the perspective transformation to the entire input image to get the final transformed image.
 
@@ -138,15 +138,15 @@ result[0:second_photo.shape[0], 0:second_photo.shape[1]] = second_photo
 ## Results of image stitching 
 #### Input Images : 
 
-![e1](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/stif_ex2.png)
+![e1](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/stif_ex2.png)
 
-![e2](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/stif_ex35.png)
+![e2](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/stif_ex35.png)
 
 #### Output panoramic images :
 
-![r1](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/stif_res2.png)
+![r1](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/stif_res2.png)
 
-![r2](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/stif_res3.png)
+![r2](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/stif_res3.png)
 
 
 ## Applying an OCR model 
@@ -162,7 +162,7 @@ text = pytesseract.image_to_string(img)
 ``` 
 But it was a bad option for extracting text from handwritten text images, and this is an example :
 
-![r2](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/p1.jpeg) 
+![r2](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/p1.jpeg) 
 
 ### 2- EasyOCR
 
@@ -194,7 +194,7 @@ for result in results:
 # Display the image with bounding boxes and text
 plt.imshow( img)
 ```
-![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/8157047e893b2a23ae5a6465e87e9a89e2172ca9/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/OCR_res7.png)
+![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/OCR_res7.png)
 
 ### 3- KerasOCR 
 Used KerasOCR and it brought the best accuracy for this task but it needs GPU acceleration so, I used Google Colab.
@@ -215,7 +215,7 @@ plt.imshow(image)
 plt.axis('off')
 plt.show()
 ```
-![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/8157047e893b2a23ae5a6465e87e9a89e2172ca9/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/kk.png)
+![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/kk.png)
 
 ## Conclusion 
 I used SIFT Algorithm with the Homography matrix technique to apply seamless image stitching for handwritten text images. Then applied an OCR model using KerasOCR.
