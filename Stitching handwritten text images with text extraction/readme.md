@@ -217,9 +217,6 @@ plt.show()
 ```
 ![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/kk.png)
 
-Tested the OCR models and chose the one with the best accuracy,
-prepared the evaluation report for the OCR models and image stitching technique (3 hours)
-#### Saturday :
-prepared a readme file for this task and recorded the video (3 hours)
+
 
 
