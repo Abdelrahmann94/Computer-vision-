@@ -7,7 +7,7 @@ images using the SIFT algorithm with Homography matrix approach as well as apply
 
 ## Image Stitching
 
-Image stitching is a computer vision and image processing technique that involves combining multiple images with overlapping fields of view to create a panoramic or wide-angle image. The goal of image stitching is to seamlessly merge these individual images into a cohesive and visually consistent panorama.
+Image stitching is an image processing technique that involves combining multiple images with overlapping fields of view to create a panoramic or wide-angle image. The goal of image stitching is to seamlessly merge these individual images into a cohesive and visually consistent panorama.
 
 Multiple images are captured by a camera or other imaging device, often with some degree of overlap between consecutive images.
 Feature Extraction such as corners or distinctive points, are identified in each image. These features serve as reference points for aligning and merging the images.
