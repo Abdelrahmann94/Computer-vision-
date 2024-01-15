@@ -217,21 +217,6 @@ plt.show()
 ```
 ![EaL](https://github.com/Abdelrahmann94/Computer-vision-/blob/a9de170f040ab9e0a072ad57d3db11965422f26c/Stitching%20handwritten%20text%20images%20with%20text%20extraction/readme%20scrs/kk.png)
 
-## Conclusion 
-I used SIFT Algorithm with the Homography matrix technique to apply seamless image stitching for handwritten text images. Then applied an OCR model using KerasOCR.
-
-## Comments
-This approach for image stitching doesn't work properly on images that contain big font sizes, and I put an example of this in the evaluation report.
-
-## Time Allocation
-
-#### Monday :
-Received the task and did some research to decide which approach I would use for this task (3 hours)
-#### Tuesday : 
-Developed an algorithm for image stitching (5 hours)
-#### Wednesday :
-Tested the image stitching approach and applied an OCR model for the panoramic image (3 hours)
-#### Thursday : 
 Tested the OCR models and chose the one with the best accuracy,
 prepared the evaluation report for the OCR models and image stitching technique (3 hours)
 #### Saturday :
