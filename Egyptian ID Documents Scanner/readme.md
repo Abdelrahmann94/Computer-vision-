@@ -45,6 +45,9 @@ plt.imshow(cv2.cvtColor(ID_Img, cv2.COLOR_BGR2RGB))
 ## Text Segmentation
 
 - Used pre-trained model YOLOv8m-seg for segmenting the text in the ID.
+- Trained the model on annotated Egyptian IDs dataset for segmenting the text in IDs
+ ![I](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/Egyptian%20ID%20Documents%20Scanner/results.png)
+
 
 ## Cropping the segmented text images
 
@@ -52,8 +55,6 @@ plt.imshow(cv2.cvtColor(ID_Img, cv2.COLOR_BGR2RGB))
 
 2 - Implemented a function to crop all the individual segmented text lines using the bounding boxes coordinates.
 
-## Results
 
-![I](https://github.com/Abdelrahmann94/Computer-vision-/blob/main/Egyptian%20ID%20Documents%20Scanner/results.png)
 
 
